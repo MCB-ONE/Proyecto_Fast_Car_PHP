@@ -1,0 +1,44 @@
+Sistema web para alquiler de coches. Proyecto realizado con una estructura MVC (Modelo Vista Controlador). 
+- Maquetación de una estructura básica header, footer y contenido principal que se cargará de forma dinámica.
+- Administrador de pruebas: 
+	->email: admin@admin.com
+	->password: admin1234
+- Usuario/cliente de pruebas:
+	->email: usuer@usuer.com
+	->password: user1234	
+- Generar la estructura MVC básica para dotar de las siguientes funcionalidades a la aplicación:
+	1. Registro de usuarios.
+		-> Dos tipos de usuarios:
+			1. Administrador: Acceso a gestión BBDD
+			2. Usuario normal: Alquiler de vehículos y gestión de sus pedidos.
+	2. Login de usuarios.
+		-> Creación de sesión qeu lo identifica durante toda su visita.
+		-> Acceso restringido según el tipo de usuario (Admin o normal).
+		-> Finalizar sesión cuando el usuario lo desee.
+	3. Gestionar categorias y marcas vehiculos (Admin).
+		-> Listar categorias y marcas existentes.
+		-> Guardar categorias y marcas nuevas.
+	4. Gestionar vehiculos(Admin).
+		-> Listar vehículos existentes.
+		-> Guardar vehículos nuevos.
+		-> Editar vehíulos existentes.
+		-> Eliminar vehículos.	
+	5. Listar productos más nuevos en la página de inicio.
+	6. Página de flota de vehículos.
+		-> Listar todos los vehículos.
+		-> Filtrar por categoría.
+	7. Página detalle de cada producto.
+		-> Formulario (Selector de fechas) de reserva.
+	8. Página de prereserva.
+		-> Mostrar los datos del alquiler (Vehículo, fechas, precio, etc.)
+		-> Permitir al usuario confirmar la reserva
+			-> Si está registrado guardar reserva en BBDD.
+			-> Usuario no registrado = volver a inicio.
+	9. Página de resumen de reservas usuario.
+			-> Listar todas las reservas del usuario.
+			-> Permitir anular reserva si esta no está condirmada.
+	10. Gestión de reservas por el administrador.
+			-> Cambiar estado de la reserva (Confirmar reservas).
+
+			
+	

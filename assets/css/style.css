@@ -1,0 +1,593 @@
+/*Variables*/
+/*Generales y resets*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  background: #fefefd; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Oswald', sans-serif; }
+
+a {
+  color: inherit !important; }
+
+a:hover {
+  text-decoration: none !important; 
+}
+
+button:focus {
+    outline: none;
+}
+
+/*Titulos*/
+.big-tittle {
+  font-size: 2.5rem; }
+
+.section-tittle {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #f4c157; }
+
+/*Botones*/
+.btn {
+  min-width: 240px;
+  padding: 8px 25px !important;
+  border-radius: 2px !important;
+  text-transform: uppercase; }
+
+.btn-small {
+  min-width: 100px; }
+
+.btn-primary {
+  background: #f4c157 !important;
+  color: #120f0d !important;
+  border: none !important; }
+
+.btn-primary:hover {
+  background: #fed47f !important;
+  color: #ececec !important;
+  border: 1px solid #ececec !important; }
+
+.btn-secondary {
+  background: none !important;
+  color: #120f0d !important;
+  border: 2px solid #120f0d !important; }
+
+.btn-secondary:hover {
+  background: #120f0d !important;
+  color: #fefefd !important;
+  border: none; }
+
+.btn-secondary-light {
+  background: none !important;
+  color: #ececec !important;
+  border: 2px solid #ececec !important; }
+
+.btn-secondary-light:hover {
+  background: #ececec !important;
+  color: #120f0d !important;
+  border: 2px solid #120f0d !important; }
+
+.btn-dark {
+  margin: 10px auto;
+  background: #120f0d !important;
+  color: #fefefd !important; }
+
+.btn-dark:hover {
+  background: none !important;
+  color: #120f0d !important;
+  border: 2px solid #120f0d !important; }
+
+/*Backgrounds*/
+.bg-gold {
+  background: #f4c157; }
+
+.bg-dark {
+  background: #120f0d !important;
+  transition: all 0.5s ease; }
+
+.bg-transparent {
+  background-color: transparent !important;
+  transition: all 0.5s ease; }
+
+.shadow-bottom {
+  box-shadow: 0px 3px 16px #19191973; }
+
+.shadow-top {
+  box-shadow: 0px -3px 16px #19191973; }
+
+.hero {
+  height: 80vh; }
+
+.bg-half {
+  height: 25vh; }
+
+.bg-third {
+  height: 35vh; }
+
+.bg-storage {
+  background: linear-gradient(rgba(4, 4, 11, 0.45), rgba(4, 4, 11, 0.45)), url("../img/parking.jpg") no-repeat center 65%;
+  border-bottom: inset 4px #f4c157; }
+
+.bg-flota {
+  background: linear-gradient(rgba(4, 4, 11, 0.45), rgba(4, 4, 11, 0.45)), url("../img/flota.jpg") no-repeat center 20%;
+  border-bottom: inset 4px #f4c157; }
+
+.bg-contact {
+  background: linear-gradient(rgba(4, 4, 11, 0.45), rgba(4, 4, 11, 0.45)), url("../img/contact.jpg") no-repeat center 20%;
+  border-bottom: inset 4px #f4c157; }
+
+/*Formularios*/
+.newsletter-form {
+  margin-top: 20px; }
+  .newsletter-form input {
+    width: 50%;
+    padding: 5px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fefefd; }
+
+.dark-form {
+  color: #fefefd; }
+  .dark-form input {
+    display: block;
+    padding-left: 5px;
+    color: #fefefd;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fefefd; }
+  .dark-form select {
+    display: block;
+    color: #fefefd;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fefefd; }
+  .dark-form option {
+    background: #120f0d;
+    color: #fefefd; }
+  .dark-form textarea {
+    display: block;
+    background: #120f0d;
+    color: #fefefd; }
+  .dark-form img {
+    max-width: 100%; }
+
+.light-form {
+  color: #120f0d; }
+  .light-form input {
+    display: block;
+    padding-left: 5px;
+    color: #120f0d;
+    width: 100%;
+    padding: 5px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #120f0d; }
+  .light-form select {
+    display: block;
+    color: #120f0d;
+    width: 100%;
+    padding: 5px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #120f0d; }
+  .light-form option {
+    background: #fefefd;
+    color: #120f0d; }
+  .light-form textarea {
+    display: block;
+    width: 100%;
+    background: #fefefd;
+    color: #120f0d; }
+  .light-form img {
+    max-width: 100%; }
+
+.nav-form label {
+  margin-top: 5px; }
+.nav-form input {
+  padding: 3px;
+  background: #ececec;
+  border: 1px solid black;
+  border-radius: 0.25rem; }
+.nav-form .btn-dark {
+  display: block;
+  margin: 15px auto -5px;
+  width: 190px; }
+
+.filter-form p {
+  font-weight: bold !important;
+  margin-bottom: 0; }
+.filter-form label {
+  font-weight: bold;
+  display: block;
+  margin: 0 0.2rem; }
+.filter-form select {
+  width: 100%;
+  margin: 10px 0px 15px; }
+.filter-form .btn-secondary {
+  padding: 0px 10px !important; }
+
+.rent-form label {
+  display: block; }
+.rent-form input {
+  width: 100%;
+  padding-left: 5px; }
+.rent-form .btn {
+  padding: 10px !important;
+  margin-top: 15px;
+  font-weight: bold; }
+
+/*Tablas*/
+.dark-wrapper {
+  padding: 20px;
+  width: fit-content;
+  margin: 44px auto;
+  background: #120f0d;
+  border-radius: .35rem; }
+
+.table-dark {
+  min-width: 500px;
+  background: #120f0d;
+  padding: 44px; }
+  .table-dark th, .table-dark td {
+    padding: 10px 10px 10px 20px; }
+  .table-dark th {
+    border: 2px solid #f4c157;
+    background: #f4c157;
+    color: #120f0d; }
+  .table-dark td {
+    border-left: 2px solid #f4c157;
+    border-bottom: 1px solid #f4c157;
+    color: #ececec;
+    padding: 20px; }
+
+/*Errores*/
+.error {
+  text-align: center;
+  padding: 70px; }
+
+/*Productos*/
+.card {
+  margin: 20px 0px;
+  box-shadow: 0 0 1px 0 rgba(10, 31, 68, 0.1), 0 10px 12px 0 rgba(0, 0, 0, 0.12); }
+  .card img {
+    padding: 30px 10px 0; }
+  .card .content {
+    margin-top: 40px;
+    padding: 0 10px; }
+    .card .content .card-subtittle {
+      color: #333333; }
+    .card .content .icons {
+      padding: 25px 10px; }
+      .card .content .icons img {
+        width: 45px;
+        padding-top: 0px; }
+      .card .content .icons p {
+        display: inline-block; }
+  .card .price {
+    border-left: 4px solid #f4c157;
+    margin: 0 0 0 -5px;
+    padding: 0 10px 10px; }
+    .card .price p {
+      margin: 0;
+      font-size: 1.5rem; }
+    .card .price div:first-child p:first-child {
+      font-size: 0.8rem; }
+    .card .price .btn {
+      min-width: auto;
+      font-weight: bold; }
+
+/*Header*/
+.header .navbar {
+  padding: 0 12rem;
+  border-top: 2px solid #f4c157; }
+.header .navbar-nav li {
+  margin: 0px 10px; }
+.header .navbar-nav .nav-link {
+  color: #fefefd !important; }
+.header .navbar-nav .nav-login {
+  padding: 0; }
+  .header .navbar-nav .nav-login .dropdown-menu {
+    min-width: 220px;
+    padding: 15px;
+    margin: .5rem 0 0;
+    background: #fed47f;
+    left: auto;
+    right: -100px; }
+  .header .navbar-nav .nav-login li {
+    margin: 7px 0 7px 0; }
+  .header .navbar-nav .nav-login a {
+    color: #120f0d; }
+  .header .navbar-nav .nav-login a:hover {
+    color: black !important;
+    font-weight: bold; }
+  .header .navbar-nav .nav-login .btn {
+    min-width: 190px; }
+  .header .navbar-nav .nav-login .user-name {
+    border-bottom: 2px #120f0d solid;
+    padding: 5px 0px 10px; }
+  .header .navbar-nav .nav-login .logout {
+    float: right; }
+  .header .navbar-nav .nav-login .register-link {
+    color: #120f0d;
+    text-decoration: underline;
+    text-underline-position: under; }
+  .header .navbar-nav .nav-login .register-link:hover {
+    color: #fefefd;
+    text-decoration: underline;
+    text-underline-position: under; }
+.header .navbar-nav img {
+  width: 26px;
+  padding-top: 5px; }
+.header .navbar-brand {
+  padding: 20px 0; }
+.header .navbar-toggle {
+  display: none;
+}
+
+/*Sidebar*/
+.sidebar {
+  position: sticky;
+  width: 20%;
+  min-height: 100vh;
+  background: #f4c157;
+  font-size: 0.9em; }
+  .sidebar .nav {
+    position: relative;
+    margin: 0 15%;
+    text-align: right;
+    top: 10%;
+    font-weight: bold; }
+  .sidebar ul {
+    list-style: none; }
+    .sidebar ul li {
+      position: relative;
+      margin: 3.2em 0; }
+      .sidebar ul li a {
+        line-height: 2em;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.2em;
+        color: #120f0d;
+        display: block;
+        transition: all ease-out 300ms; }
+      .sidebar ul li.active a {
+        color: #ececec; }
+      .sidebar ul li:not(.active)::after {
+        opacity: 0.2; }
+      .sidebar ul li:not(.active):hover a {
+        color: rgba(255, 255, 255, 0.75); }
+      .sidebar ul li::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0.2em;
+        background: black;
+        left: 0;
+        bottom: 0;
+        background-image: linear-gradient(to right, #120f0d, #333333); }
+
+/*Home*/
+.home {
+  min-height: 100vh; }
+  .home .hero {
+    background: linear-gradient(rgba(45, 45, 45, 0.4), rgba(45, 45, 45, 0.4)), url("../img/hero_home.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120%; }
+    .home .hero .bottom {
+      color: #fefefd;
+      padding: 328px 12rem 0; }
+    .home .hero .registro {
+      padding: 40px;
+      background: #0000009c;
+      border-bottom: 4px solid #f4c157; }
+  .home .cta-call {
+    padding: 30px 30px 0px;
+    border-bottom: 4px solid #fed47f;
+    font-weight: 800; }
+    .home .cta-call p {
+      font-size: 20px; }
+    .home .cta-call p:first-child {
+      color: #9c9f9d;
+      margin: 0; }
+  .home .about-us {
+    padding: 80px 0px;
+    background: #ececec; }
+    .home .about-us .container {
+      position: relative; }
+    .home .about-us .content {
+      position: absolute;
+      z-index: 2;
+      width: 60%;
+      right: 0;
+      top: 15%; }
+      .home .about-us .content .section-tittle {
+        margin-bottom: 15px; }
+      .home .about-us .content .text {
+        padding: 45px;
+        background: #fefefd;
+        border-left: 4px solid #fed47f; }
+    .home .about-us .image {
+      position: relative;
+      z-index: 1;
+      width: 50%;
+      height: 400px;
+      background: url("../img/home-about.jpg") no-repeat;
+      background-size: cover !important; }
+  .home .new-cars {
+    min-height: 50vh;
+    padding: 100px 0px; }
+
+/*Registro*/
+#register {
+  background: url(../img/register.jpg) no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 2000px #01020b80;
+  padding-bottom: 15%;
+  min-height: 100%; }
+  #register .big-tittle {
+    padding: 30px 0;
+    color: #120f0d; }
+  #register .form-register {
+    padding-top: 10%; }
+    #register .form-register div > div {
+      min-height: 70%; }
+    #register .form-register div > div > div {
+      padding: 40px 70px; }
+    #register .form-register img {
+      width: 25%;
+      margin: 0 auto;
+      display: block; }
+
+/*Flota*/
+.flota {
+  margin: 0 auto 100px; }
+
+.filters {
+  width: 45%;
+  margin: 0 auto;
+  margin-top: -71px; }
+  .filters > div:first-child {
+    background: #00000059;
+    padding: 15px; }
+    .filters > div:first-child p {
+      color: #fefefd; }
+  .filters > div:last-child {
+    padding: 15px 15px 5px;
+    background: #f4c157; }
+    .filters > div:last-child form {
+      background: #f4c157; }
+
+/*Detalles de vehiculo*/
+.product-details {
+  color: #9c9f9d;
+  margin-bottom: 100px; }
+  .product-details .container {
+    max-width: 1280px; }
+  .product-details p {
+    text-align: justify; }
+  .product-details > a {
+    display: table;
+    margin: 50px auto 0; }
+  .product-details .details-image {
+    background: #ececec; }
+    .product-details .details-image img {
+      margin: 10% auto; }
+  .product-details .details-tittle-block {
+    font-size: 1.2rem;
+    color: #fefefd;
+    border-left: 6px #f4c157 solid;
+    padding-left: 8px; }
+  .product-details .details-text {
+    margin: 0;
+    padding: 50px;
+    background: #333333;
+    /*Estado*/ }
+    .product-details .details-text .details-category {
+      color: #f4c157; }
+    .product-details .details-text .details-tittle {
+      color: #fefefd; }
+    .product-details .details-text .details-subtittle {
+      color: #9c9f9d; }
+    .product-details .details-text li::marker {
+      color: #ececec; }
+    .product-details .details-text strong {
+      color: #ececec; }
+    .product-details .details-text strong.confirm {
+      color: #f4c157; }
+    .product-details .details-text strong.not-confirm {
+      color: red; }
+  .product-details .details-icons img {
+    width: 36px;
+    padding-top: 0px;
+    margin-right: 10px; }
+  .product-details .details-icons p {
+    display: inline-block; }
+  .product-details .details-price p {
+    color: #fefefd; }
+  .product-details .details-price .price {
+    font-size: 2rem;
+    margin-bottom: 0; }
+  .product-details .rent-form-wrapper {
+    background: #333333;
+    padding: 50px 0px; }
+    .product-details .rent-form-wrapper .btn-secondary-light {
+      margin: 35% 10%; }
+
+/* Alquiler/ Reservas */
+.rent {
+  min-height: 65vh; }
+
+.rent-details .details-image > img {
+  margin: 25% auto; }
+
+.container-prereserva {
+  box-shadow: #00000021 -20px -3px 14px 2px;
+  max-width: 1080px;
+  margin: 0 auto; }
+  .container-prereserva .details-text {
+    padding: 40px;
+    box-shadow: #00000036 -1px -2px 13px 0px; }
+  .container-prereserva .prereserva-image {
+    background: #ececec; }
+    .container-prereserva .prereserva-image img {
+      margin: 10% 10%; }
+
+/*Gestion backend*/
+.gestion {
+  padding: 80px 100px;
+  width: 80%;
+  float: right; }
+
+.dark-wrapper .btn {
+  margin-top: 44px; }
+
+/*Crear vehiculo*/
+.crear-vehiculo .dark-wrapper {
+  min-width: 90%;
+  padding: 60px 40px; }
+
+/*Contacto*/
+.contact { 
+  margin-bottom: 100px;
+}
+  .contact .list-unstyled li {
+    margin: 20px 0; }
+  .contact .list-unstyled img {
+    max-width: 26px;
+    margin-right: 5px; }
+
+/*Footer*/
+footer {
+  padding: 45px 0 0;
+  background: #120f0d;
+  color: #ececec; }
+  footer .contact li {
+    margin-bottom: 8px; }
+  footer .contact img {
+    width: 20px;
+    margin-right: 10px; }
+  footer h4 {
+    margin-bottom: 10px; }
+  footer .registro {
+    margin: -50px 40px 0;
+    background: #474747;
+    padding: 30px 0 50px; }
+  footer .social h4 {
+    margin-bottom: 20px; }
+  footer .social img {
+    margin: 0 10px;
+    width: 30px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,280 @@
+/*MEDIAQUERYS*/
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+
+    /* HEADER
+	================================================== */
+    /* Navigation */
+
+
+    /* HERO
+	================================================== */
+
+
+    /* SITEMAIN
+	================================================== */
+    /* Modal */
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+
+    /* CUSTOM RESETS
+	================================================== */
+
+    /* CUSTOM CONTAINER
+	================================================== */
+
+
+    /* Buttons */
+
+
+    /* HEADER
+	================================================== */
+    /* Navigation */
+	
+
+    /* HERO
+	================================================== */
+
+    /* SITEMAIN
+	================================================== */
+
+
+    /* Section: Contact */
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+    /* CUSTOM RESETS
+	================================================== */
+	/*Titles*/
+
+    /* Buttons */
+    .btn{
+    	min-width: auto;
+    	padding: 5px 25px;
+    }
+
+    /* Input fields */
+
+
+    /* HEADER
+	================================================== */
+
+    /* Navigation */
+	.header .navbar {
+	    padding: 0px 30px;
+	    background-color: #120f0d !important;
+	}
+
+	.header .navbar-toggle{
+		display: block;
+		background: none;
+		border: none;
+		position: relative;
+	}
+
+	.header .icon-bar {
+	    display: block;
+	    width: 22px;
+	    height: 2px;
+	    border-radius: 1px;
+	    background-color: #f4c157;
+	    -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+	}
+
+	.navbar-toggle.act .icon-bar:first-child,
+    .navbar-toggle.act .icon-bar:last-child {
+        position: absolute;
+        height: 2px;
+    }
+
+	    .navbar-toggle.act .icon-bar:first-child {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .navbar-toggle.act .icon-bar:last-child {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    .navbar-toggle.act .icon-bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar-toggle.act .icon-bar+.icon-bar {
+        margin-top: 0px;
+    }
+
+	.navbar-toggle .icon-bar+.icon-bar {
+    	margin-top: 6px;
+	}
+
+	.navbar-nav{
+		height: 100vh;
+		padding: 30% 0;
+		text-align: center;
+	}
+
+	.nav-link {
+	    display: block;
+	    font-size: 26px;
+    	padding: 26px 0px;
+	}
+
+	.header .navbar-nav img {
+    	padding-bottom: 2rem;
+	}
+
+	/*Formulario login*/
+	 .nav-form{
+		width: fit-content;
+    	margin: 0 auto;
+	}
+
+	.nav-form input {
+    	margin-right: 30px;
+	}
+
+	.header .navbar-nav .nav-login .dropdown-menu {
+    min-height: 160px;
+	}
+
+
+    /* HOME
+	================================================== */
+	.home .hero {
+		height: 50vh;
+    	background-size: cover;
+	}
+
+	.home .hero .bottom {
+    	padding: 40% 2rem 0;
+	}
+
+	.home .cta-call {
+    	padding: 30px 30px;
+	}
+
+	.home .about-us .content {
+    	position: inherit;	
+	}
+
+	.home .about-us .image {
+    position: inherit;
+    width: 96%;
+    height: 400px;
+    margin: 0 auto;
+	}	
+
+	.home .new-cars .container {
+	    width: 100%;
+	    padding: 0;
+	}
+
+    /* FLOTA
+	================================================== */
+	.filters {
+    width: 80%;
+	}
+
+    /* Modal */
+
+    /* FOOTER
+	================================================== */
+	footer .registro {
+	    margin: 0 auto;
+	    padding: 30px 0 30px;
+	}
+
+	footer .contact {
+    text-align: center;
+    margin-bottom: 30px;
+	}
+
+	footer .contact .list-unstyled {
+	    text-align: start;
+	    width: 75%;
+	    margin: 0 auto;
+	}
+
+	footer .social{
+	    text-align: center;
+	}
+
+	footer .newsletter-form input {
+    margin-right: 15px;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px) {
+
+	/* HEADER */
+	.navbar-nav{
+		padding: 15% 0;
+	}
+
+    /* HOME
+	================================================== */
+	.home .hero {
+	    height: 70vh;
+	}
+
+	.home .hero .bottom {
+    padding: 80% 2rem 0;
+	}
+
+	.home .hero .register{
+	    display: none;
+	}
+
+
+
+
+    /* SITEMAIN
+	================================================== */
+
+
+    /* Section: Portfolio */
+
+
+    /*Section: services*/
+
+
+    /*Section: services*/
+
+    /* Section: Contact*/
+
+    /*MODAL*/
+
+
+
+
+
+    /* FOOTER
+	================================================== */
+	footer {
+    padding: 45px 0;
+	}
+
+	footer .social{
+		padding-top: 30px;
+	}

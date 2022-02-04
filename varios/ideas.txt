@@ -1,0 +1,14 @@
+Pagina de alquiler de coches.
+*Cabecera con menú, login/Registro.
+*Footer
+Inicio:
+-Nosotros
+-Últimos coches(Carga dinámica slider)
+-Buscador coches
+
+Coches:
+-Categorias (Generado de forma diámica)
+-Buscador (PHP)
+-Pagina de cada coche (Dinámica)
+Contacto
+

@@ -1,0 +1,919 @@
+/*Variables*/
+$smoke-white: #fefefd;
+$dark-black: #120f0d;
+$light-grey: #ececec;
+$medium-grey:#9c9f9d;
+$dark-grey: #333333;
+$light-gold: #fed47f;
+$dark-gold: #f4c157;
+
+
+
+/*Generales*/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background: $smoke-white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Oswald', sans-serif;
+}
+
+a{
+    color: inherit !important;
+}
+
+a:hover{
+    text-decoration: none !important;
+}
+
+
+/*Titulos*/
+
+.big-tittle {
+    font-size: 2.5rem
+}
+
+.section-tittle {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: $dark-gold;
+}
+
+
+/*Botones*/
+.btn {
+    min-width: 240px;
+    padding: 8px 25px !important;
+    border-radius: 2px !important;
+    text-transform: uppercase;
+}
+
+.btn-small{
+    min-width: 100px;
+}
+
+.btn-primary {
+    background: $dark-gold !important;
+    color: $dark-black !important;
+    border: none !important;
+}
+
+.btn-primary:hover {
+    background: $light-gold !important;
+    color: $light-grey !important;
+    border: 1px solid $light-grey !important;
+}
+
+.btn-secondary {
+    background: none !important;
+    color: $dark-black !important;
+    border: 2px solid $dark-black !important;
+}
+
+.btn-secondary:hover {
+    background: $dark-black !important;
+    color:  $smoke-white!important;
+    border: none;
+}
+
+.btn-secondary-light {
+    background: none !important;
+    color: $light-grey !important;
+    border: 2px solid $light-grey !important;
+}
+
+.btn-secondary-light:hover {
+    background: $light-grey !important;
+    color: $dark-black !important;
+    border: 2px solid $dark-black !important;
+}
+
+.btn-dark{
+    margin: 10px auto;
+    background: $dark-black !important;
+    color: $smoke-white !important;
+}
+
+.btn-dark:hover{
+    background: none !important;
+    color: $dark-black !important;
+    border: 2px solid $dark-black !important;
+}
+
+/*Backgrounds*/
+.bg-gold {
+    background: $dark-gold;
+}
+
+.bg-dark{
+    background: $dark-black !important;
+    transition: all 0.5s ease;
+}
+
+.bg-transparent{
+    background-color: transparent !important;
+    transition: all 0.5s ease;
+}
+
+.shadow-bottom {
+    box-shadow: 0px 3px 16px #19191973;
+}
+
+.shadow-top{
+    box-shadow: 0px -3px 16px #19191973;
+}
+
+.hero {
+    height: 80vh;
+}
+
+.bg-half {
+    height: 25vh;
+}
+
+.bg-third {
+    height: 35vh;
+}
+
+.bg-storage{
+    background:linear-gradient(rgba(4, 4, 11, 0.45), rgba(4, 4, 11, 0.45)), url('../img/parking.jpg') no-repeat center 65%;
+    border-bottom: inset 4px $dark-gold;
+}
+
+.bg-flota{
+    background:linear-gradient(rgba(4, 4, 11, 0.45), rgba(4, 4, 11, 0.45)), url('../img/flota.jpg') no-repeat center 20%;
+    border-bottom: inset 4px $dark-gold;
+}
+
+.bg-contact{
+    background:linear-gradient(rgba(4, 4, 11, 0.45), rgba(4, 4, 11, 0.45)), url('../img/contact.jpg') no-repeat center 20%;
+    border-bottom: inset 4px $dark-gold;
+}
+
+
+/*Formularios*/
+.newsletter-form{
+
+    margin-top: 20px;
+
+    input {
+        width: 50%;
+        padding: 5px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid $smoke-white;
+    }
+
+}
+
+.dark-form{
+	color: $smoke-white;
+    input {
+        display: block;
+        padding-left:  5px;
+    	color: $smoke-white;
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 15px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid $smoke-white;
+    }
+
+    select{
+        display: block;
+        color: $smoke-white;
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 15px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid $smoke-white;
+    }
+
+    option{
+        background: $dark-black;
+        color: $smoke-white;
+    }
+
+    textarea{
+        display: block;
+        background: $dark-black;
+        color: $smoke-white; 
+    }
+
+    img{
+        max-width: 100%;
+    }
+    
+}
+
+
+.light-form{
+    color: $dark-black;
+    input {
+        display: block;
+        padding-left:  5px;
+        color: $dark-black;
+        width: 100%;
+        padding: 5px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid $dark-black;
+    }
+
+    select{
+        display: block;
+        color: $dark-black;
+        width: 100%;
+        padding: 5px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid $dark-black;
+    }
+
+    option{
+        background: $smoke-white;
+        color: $dark-black;
+    }
+
+    textarea{
+        display: block;
+        width: 100%;
+        background: $smoke-white;
+        color: $dark-black; 
+    }
+
+    img{
+        max-width: 100%;
+    }
+    
+}
+
+.nav-form{
+	label{
+		margin-top: 5px;
+	}
+
+	input{
+		padding: 3px;
+		background: #ececec;
+	    border: 1px solid black;
+	    border-radius: 0.25rem;
+	}
+
+	.btn-dark{
+	    display: block;
+   		margin: 15px auto -5px;
+    	width: 190px;
+	}
+}
+
+.filter-form{
+
+    p{
+        font-weight: bold !important;
+        margin-bottom: 0;
+    }
+            
+    label {
+        font-weight: bold;
+        display: block;
+        margin:  0 0.2rem;
+    }   
+
+    select{
+        width: 100%;
+        margin: 10px 0px 15px;
+    }
+
+    .btn-secondary{
+        padding: 0px 10px !important;
+    }
+
+}
+
+.rent-form{
+
+    label{
+        display: block;
+    }
+
+    input{
+        width: 100%;
+        padding-left: 5px;
+    }
+
+    .btn {
+        padding: 10px !important;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+
+}
+
+
+/*Tablas*/
+.dark-wrapper{
+    padding: 20px;
+    width: fit-content;
+    margin: 44px auto;
+    background: $dark-black;
+    border-radius: .35rem;
+}
+
+.table-dark{
+    min-width: 500px;
+    background: $dark-black;
+    padding: 44px;
+
+    th, td{
+        padding: 10px 10px 10px 20px;
+    }
+
+    th{
+        border: 2px solid $dark-gold;
+        background: $dark-gold;
+        color: $dark-black;
+    }
+
+    td{
+        border-left: 2px solid #f4c157;
+        border-bottom: 1px solid #f4c157;
+        color: #ececec;
+        padding: 20px;
+    }
+
+}
+
+/*Errores*/
+.error {
+    text-align: center;
+    padding: 70px;
+}
+
+
+/*Productos*/
+.card {
+    margin: 20px 0px;
+    box-shadow: 0 0 1px 0 rgba(10, 31, 68, 0.10), 0 10px 12px 0 rgba(0, 0, 0, 0.12);
+
+    img {
+        padding: 30px 10px 0;
+    }
+
+    .content {
+        margin-top: 40px;
+        padding: 0 10px;
+
+        .card-subtittle {
+            color: $dark-grey;
+        }
+
+        .icons {
+            padding: 25px 10px;
+
+            img {
+                width: 45px;
+                padding-top: 0px;
+            }
+
+            p {
+                display: inline-block;
+            }
+        }
+
+    }
+
+    .price {
+        border-left: 4px solid $dark-gold;
+        margin: 0 0 0 -5px;
+        padding: 0 10px 10px;
+
+        p {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        div:first-child p:first-child {
+            font-size: 0.8rem;
+        }
+
+        .btn{
+            min-width: auto;
+            font-weight: bold;
+        }
+    }
+
+}
+
+/*Header*/
+.header {
+
+    .navbar {
+        padding: 0 12rem;
+        border-top: 2px solid $dark-gold;
+    }
+
+    .navbar-nav {
+        li {
+            margin: 0px 10px;
+        }
+
+        .nav-link {
+            color: $smoke-white !important;
+        }
+
+        .nav-login{
+         	padding: 0;
+
+         	.dropdown-menu{
+         		min-width: 220px;
+         		padding: 15px;
+         		margin: .5rem 0 0;
+         		background: $light-gold;
+         		left: auto;
+         		right: -100px;
+         	}
+
+         	li{
+    				margin: 7px 0 7px 0;
+    			}
+
+         	a{
+         		color: $dark-black;
+         	}
+
+            a:hover{
+                color: black !important;
+                font-weight: bold;
+            }
+
+         	.btn{
+         		min-width: 190px;
+         	}
+
+         	.user-name{
+         		border-bottom: 2px $dark-black solid;
+    			padding: 5px 0px 10px;
+         	}
+
+         	.logout{
+         		float: right;
+         	}
+
+            .register-link{
+                color: $dark-black;
+                text-decoration: underline;
+                text-underline-position: under;
+            }
+
+            .register-link:hover{
+                color: $smoke-white;
+                text-decoration: underline;
+                text-underline-position: under;
+            }
+        }
+
+        img{
+        	width: 28px;
+        	padding-top: 5px;
+        }
+    }
+
+    .navbar-brand {
+        padding: 20px 0;
+    }
+
+}
+
+/*Sidebar*/
+.sidebar {
+      position: sticky;
+      width: 20%;
+      min-height: 100vh;
+      background: $dark-gold;
+      font-size: 0.9em;
+
+      .nav {
+          position: relative;
+          margin: 0 15%;
+          text-align: right;
+          top: 10%;
+          font-weight: bold;
+    }
+
+    ul {
+        list-style: none;
+  
+          li {
+            position: relative;
+            margin: 3.2em 0;
+            
+            a {
+              line-height: 2em;
+              text-transform: uppercase;
+              text-decoration: none;
+              letter-spacing: 0.2em;
+              color: $dark-black;
+              display: block;
+              transition: all ease-out 300ms;
+            }
+            
+            &.active a {
+              color: $light-grey;
+            }
+            
+            &:not(.active)::after {
+              opacity: 0.2;
+            }
+            
+            &:not(.active):hover a {
+              color: rgba(#FFF, 0.75);
+            }
+            
+            &::after {
+              content: '';
+              position: absolute;
+              width: 100%;
+              height: 0.2em;
+              background: black;
+              left: 0;
+              bottom: 0;
+              background-image: linear-gradient(to right, $dark-black, $dark-grey);
+            }
+          }
+        }
+}
+
+/*Page*/
+.page {
+    min-height: 100vh;
+}
+
+/*Home*/
+
+.home {
+    min-height: 100vh;
+
+    .hero {
+        background: linear-gradient(rgba(45, 45, 45, 0.40), rgba(45, 45, 45, 0.40)), url('../img/hero_home.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 120%;
+
+
+        .bottom {
+            color: $smoke-white;
+            padding: 328px 12rem 0;
+        }
+
+        .registro {
+            padding: 40px;
+            background: #0000009c;
+            border-bottom: 4px solid $dark-gold;
+        }
+    }
+
+    .cta-call {
+        padding: 30px 30px 0px;
+        border-bottom: 4px solid $light-gold;
+        font-weight: 800;
+
+        p {
+            font-size: 20px;
+        }
+
+        p:first-child {
+            color: $medium-grey;
+            margin: 0;
+        }
+    }
+
+    .about-us {
+        padding: 80px 0px;
+        background: $light-grey;
+
+        .container {
+            position: relative;
+        }
+
+        .content {
+            position: absolute;
+            z-index: 2;
+            width: 60%;
+            right: 0;
+            top: 15%;
+
+            .section-tittle {
+                margin-bottom: 15px;
+            }
+
+            .text {
+                padding: 45px;
+                background: $smoke-white;
+                border-left: 4px solid $light-gold;
+            }
+        }
+
+        .image {
+            position: relative;
+            z-index: 1;
+            width: 50%;
+            height: 400px;
+            background: url('../img/home-about.jpg') no-repeat;
+            background-size: cover !important;
+        }
+
+
+    }
+
+    .new-cars {
+        min-height: 50vh;
+        padding: 100px 0px;
+    }
+
+}
+
+/*Registro*/
+#register {
+    background: url(../img/register.jpg) no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 2000px #01020b80;
+    padding-bottom: 15%;
+    min-height: 100%;
+    .big-tittle {
+        padding: 30px 0;
+        color: $dark-black;
+    }
+
+    .form-register {
+        padding-top: 10%;
+
+        div>div{
+            min-height: 70%;
+        }
+
+        div>div>div {
+            padding: 40px 70px;
+        }
+
+        img{
+        	width: 25%;
+    		margin: 0 auto;
+    		display: block;
+        }
+
+    }
+
+}
+
+
+/*Flota*/
+.flota{
+    margin: 0 auto 100px;
+}
+.filters{
+    width: 45%;
+    margin: 0 auto;
+    margin-top: -71px;
+    >div:first-child {
+        background: #00000059;
+        padding: 15px; 
+            p{
+                color: $smoke-white;
+            }
+        }
+
+    >div:last-child {
+            padding: 15px 15px 5px;
+            background: $dark-gold;
+            form{
+              background: $dark-gold;  
+            }
+        }
+}
+
+/*Detalles de vehiculo*/
+.product-details{
+    color: $medium-grey;
+    margin-bottom: 100px;
+    .container{
+        max-width: 1280px;
+    }
+
+    p{
+        text-align: justify;
+    }
+
+    >a{
+    display: table;
+    margin: 50px auto 0;
+    }
+
+
+    .details-image{
+        background: $light-grey;
+        img{
+            margin:10% auto;
+        }
+    }
+
+    .details-tittle-block {
+        font-size: 1.2rem;
+        color: $smoke-white;
+        border-left: 6px $dark-gold solid;
+        padding-left: 8px;
+    }
+
+    .details-text{
+        margin: 0;
+        padding: 50px;
+        background: $dark-grey;
+        .details-category{
+            color:$dark-gold;
+        }
+
+        .details-tittle{
+            color: $smoke-white;
+        }
+        .details-subtittle{
+            color:$medium-grey;
+        }
+
+        li::marker{
+            color: $light-grey;
+        }
+        strong{
+            color: $light-grey;
+        }
+
+        /*Estado*/
+        strong.confirm{
+            color: $dark-gold;
+        }
+
+        strong.not-confirm{
+            color: red;
+        }
+    }
+
+    .details-icons{
+        img {
+                width: 36px;
+                padding-top: 0px;
+                margin-right: 10px;
+            }
+        p{
+            display: inline-block;
+        }
+    }
+
+    .details-price{
+        p{
+            color:$smoke-white;
+        }
+
+        .price{
+            font-size: 2rem;
+            margin-bottom: 0;
+        }
+
+    }
+
+    .rent-form-wrapper{
+        background: $dark-grey;
+        padding: 50px 0px;
+
+        .btn-secondary-light{
+        margin: 35% 10%;
+        }
+    }
+
+}
+
+/* Alquiler/ Reservas */
+.rent{
+    min-height: 65vh;  
+}
+
+.rent-details{
+    .details-image>img{
+        margin: 25% auto;
+    }
+    
+}
+
+
+
+.container-prereserva{
+    box-shadow: #00000021 -20px -3px 14px 2px;
+    max-width: 1080px;
+    margin: 0 auto;
+
+    .details-text{
+        padding: 40px;
+        box-shadow: #00000036 -1px -2px 13px 0px;
+    }
+
+    .prereserva-image{
+        background: $light-grey;
+        img{
+            margin: 10% 10%;
+        }
+    }
+
+}
+
+.mis-reservas{
+    
+}
+
+
+
+
+/*Gestion backend*/
+.gestion{
+        padding: 80px 100px;
+        width: 80%;
+        float: right;
+}
+
+.dark-wrapper{
+    .btn{
+        margin-top: 44px;
+    }
+}
+
+/*Crear vehiculo*/
+.crear-vehiculo{
+    .dark-wrapper{
+        min-width: 90%;
+        padding: 60px 40px;
+    }
+
+}
+
+/*Contacto*/
+.contact{
+    margin: 100px 0;
+    .list-unstyled{
+        li{
+            margin-top: 10px;
+
+        }
+
+        img{
+            max-width: 26px;
+            margin-right: 5px;
+        }
+    }
+}
+
+
+/*Footer*/
+footer {
+    padding: 45px 0 0;
+    background: $dark-black;
+    color: $light-grey;
+
+    .contact {
+        li {
+            margin-bottom: 8px;
+        }
+
+        img {
+            width: 20px;
+            margin-right: 10px;
+        }
+    }
+
+    h4 {
+        margin-bottom: 10px;
+    }
+
+    .registro {
+        margin: -50px 40px 0;
+        background: #474747;
+        padding: 30px 0;
+    }
+
+    .social {
+        h4 {
+            margin-bottom: 20px;
+        }
+
+        img {
+            margin: 0 10px;
+            width: 30px;
+        }
+
+    }
+
+}

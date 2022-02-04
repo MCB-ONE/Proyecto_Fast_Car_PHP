@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+#Activar rewrite
+RewriteEngine on
+
+#Redirigir cuando se produce un error 404
+ErrorDocument 404 http://localhost/Curso_PHP/ejercicios_EscolEspai/practica_final/error/
+
+#Deshabilitar que se muestre en la url la dirección de un directorio o fichero
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+#Reescribir la url a este formato ->
+RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2
+</IfModule>
